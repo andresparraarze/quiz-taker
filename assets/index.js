@@ -50,6 +50,7 @@ var questions = [
     answer: "c"
 },
 ] ; 
+
 var score = 0;
 
 for(var i = 0; i < questions.length; i++){
@@ -61,4 +62,13 @@ for(var i = 0; i < questions.length; i++){
         alert("wrong");
     };
 };
+
+// onclick
+var button = document.getElementsByClassName("view-highscores-button");
+
+button.addEventListener('click', event => {
+    button.textContent = `Click count: ${event.detail}`;
+});
+
+if 
 alert("you got " + score + "/" + questions.length);
